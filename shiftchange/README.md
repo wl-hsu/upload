@@ -23,6 +23,11 @@ python manage.py
 2. install psycopg2
 3. app.config["SQLALCHEMY_DATABASE_URI"]='postgresql+psycopg2://postgres:yourpassword@127.0.0.1:5432/dbname'
 
+## How to start
+```angular2html
+python manage.py
+```
+
 ## How to deploy in docker to run in background
 ```angular2html
 docker build -t name_of_container_you_want .
