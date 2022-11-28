@@ -1,15 +1,27 @@
 
-
-
 ## install requirement
+```angular2html
+python -m venv venv
+```
+```angular2html
+venv\Scripts\activate
+```
 ```angular2html
 pip isntall -r requirements.txt
 ```
 
-## Create a squlite db in root
+## Connect to DB
+we can use sqlite db first when we are developing this project and migrate to local postgresql db or online postgresql db after complete it.
+
+### Create a squlite db in root
 ```angular2html
 python manage.py
 ```
+
+### Connect to local postgresql db
+1. install postgresql db in local
+2. install psycopg2
+3. app.config["SQLALCHEMY_DATABASE_URI"]='postgresql+psycopg2://postgres:yourpassword@127.0.0.1:5432/dbname'
 
 ## How to deploy in docker to run in background
 ```angular2html
